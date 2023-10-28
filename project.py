@@ -11,11 +11,10 @@ st.set_page_config(
     page_icon='💻'
 )
 
-game_img = 'game.jpg'
-soccer_img = 'soccer.jpg'
-sing_img = 'sing.jpg'
-school_img = 'osung_high_school.jpg'
-osadress_image = 'way_to_school.jpg'
+game_img = './image/game.jpg'
+soccer_img = './image/soccer.jpg'
+sing_img = './image/sing.jpg'
+school_img = './image/osung_high_school.jpg'
 
 
 
@@ -115,10 +114,10 @@ elif selected == '동아리소개' :
     st.write('8명 / 부장 : 박주하')
     st.write('지오지브라를 이용하여 코딩을 하거나 아두이노로 작품을 만드는 활동을 한다')
 
-    video_file = open('geo_string_art.mp4', 'rb')
+    video_file = open('./image/geo_string_art.mp4', 'rb')
     video_bytes = video_file.read()
     st.video(video_bytes)
-    image1 = Image.open('balancing_robot.jpg')
+    image1 = Image.open('./image/balancing_robot.jpg')
     st.image(image1, caption='벨런싱 로봇')
 
 
@@ -131,7 +130,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('MainBoard')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image = Image.open('mainboard.jpg')
+            image = Image.open('./image/mainboard.jpg')
             st.image(image)
         with bar2:
             st.write('컴퓨터 본체를 구성하는 부품 중 하나로 컴퓨터의 각 부품에 전원을 공급하고 부품간에 신호를 주고받는 통로를 담당하므로 순환계이자 신경계로 비유된다.')
@@ -144,7 +143,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('CPU')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image1 = Image.open('cpu.jpg')
+            image1 = Image.open('./image/cpu.jpg')
             st.image(image1)
         with bar2:
             st.write('Central Processing Unit, 중앙 처리 장치')
@@ -156,7 +155,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('Graphics Card(GPU)')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image2 = Image.open('gpu.jpg')
+            image2 = Image.open('./image/gpu.jpg')
             st.image(image2)
         with bar2:
             st.write('그래픽 카드는 CPU의 명령하에 이루어지는 그래픽 작업을 전문적으로 빠르게 처리하고 디지털 신호를 영상 신호로 바꿔 모니터로 전송하는 장치이다.')
@@ -167,7 +166,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('RAM')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image3 = Image.open('ram.jpg')
+            image3 = Image.open('./image/ram.jpg')
             st.image(image3)
         with bar2:
             st.write('Random Access Memory, 주기억장치')
@@ -181,7 +180,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('HDD')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image4 = Image.open('hdd.jpg')
+            image4 = Image.open('./image/hdd.jpg')
             st.image(image4)
 
         with bar2:
@@ -193,7 +192,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('SSD')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image5 = Image.open('ssd.jpg')
+            image5 = Image.open('./image/ssd.jpg')
             st.image(image5)
         with bar2:
             st.write('Solid-state drive')
@@ -207,7 +206,7 @@ elif selected == '컴퓨터 부품' :
         st.subheader('Power Supply')
         bar1, bar2 = st.columns([2, 2])
         with bar1:
-            image6 = Image.open('power.jpg')
+            image6 = Image.open('./image/power.jpg')
             st.image(image6)
         with bar2:
             st.write('컴퓨터 부품에 필요한 전압과 전류로 변환해 전원을 공급하는 컴퓨터 부품이다.')
@@ -313,7 +312,7 @@ else :
                 st.latex(r'''v평균 = \frac{v₀+v}{2}''')
 
             st.write('⑤ 등가속도 직선운동 그래프')
-            image1 = Image.open('physics.jpg')
+            image1 = Image.open('./image/physics.jpg')
             st.image(image1)
 
     elif menu == '2.힘':
