@@ -82,19 +82,19 @@ elif selected == '학교소개':
 
         with bar1:
             st.subheader('교목')
-            image = Image.open('symbol_tree.jpg')
+            image = Image.open('./image/symbol_tree.jpg')
             st.image(image, caption='교목')
             st.write('히말라야시다')
             st.write('높은 기상과 안정의 상징으로 영원한 발전을 기원')
         with bar2:
             st.subheader('교화')
-            image = Image.open('symbol_flower.jpg')
+            image = Image.open('./image/symbol_flower.jpg')
             st.image(image, caption='교화')
             st.write('장미')
             st.write('정열적 삶을 실천하고 향기로운 사회의 구성원이 되기를 희망함')
         with bar3:
             st.subheader('교조')
-            image = Image.open('symbol_bird.jpg')
+            image = Image.open('./image/symbol_bird.jpg')
             st.image(image, caption='교조')
             st.write('까치')
             st.write('밝고 단아 타인과 사회에 기쁨과 희망을 주는 이타적인 사람이 되기를 기원함')
